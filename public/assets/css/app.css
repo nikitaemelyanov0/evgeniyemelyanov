@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.black-18px{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.black-18px-lh155{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 155%;
+}
+
+.blue-18px{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #152650;
+}
+
+.black-20px{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.black-19px{
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 170%;
+}
+
+.black-22px{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.logo-font{
+    font-family: "Literata", serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.white-33px{
+    font-family: "Inter", sans-serif;
+    font-size: 33px;
+    font-weight: 500;
+    color: white;
+    line-height: 150%;
+}
+
+.white-20px{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    line-height: 150%;
+}
+
+
+.wrapper{
+    max-width: 1172px;
+    padding: 0px 16px;
+    margin: 0 auto;
+}
+
+h1{
+    white-space: nowrap;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 0;
+    gap: 30px;
+}
+
+.header-container>ul {
+    display: flex;
+    justify-content: space-between;
+    width: 562px;
+}
+
+header{
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+
+.main{
+    background-image: url('/assets/images/main-bg.png');
+    height: 850px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.main-container{
+    display: flex;
+    padding-top: 75px;
+    justify-content: space-between;
+}
+
+.btn-white{
+    padding: 27px 60px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 12px;
+}
+
+.main-container-right{
+    padding-top: 50px;
+    width: 572px;
+    margin-right: 20px;
+}
+
+.main-container-right>p{
+    margin: 55px 0 100px 0;
+    width: 92%;
+}
+
+.help-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.help-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.help{
+    margin-top: 65px;
+}
+
+.help-cards{
+    margin-top: 60px;
+}
+
+.help-card>p{
+    margin-top: 40px;
+}
+
+.about-me{
+    margin-top: 120px;
+}
+
+.about-me>h3{
+    margin-bottom: 40px;
+}
+
+.read-more{
+    cursor: pointer;
+}
+
+.certificates{
+    margin-top: 100px;
+}
+
+.certificates>h3{
+    margin-bottom: 50px;
+}
+
+.cert-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+.cert-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.cert-page {
+    min-width: 100%;    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 275px);
+    gap: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.cert-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+    overflow: hidden;
+}
+
+.cert-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.cert-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(165, 165, 165);
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    color: #111;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+.cert-prev { left: 8px; }
+.cert-next { right: 8px; }
