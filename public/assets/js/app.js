@@ -7,22 +7,20 @@ readmore.forEach(element => {
     readmore[1].style = 'display: none'))}
 );
 
-let certIndex = 0;
-  const certTrack = document.getElementById('certTrack');
-  const certPages = document.querySelectorAll('.cert-page');
+ const certSlider = document.getElementById('certSlider');
 
-  function moveCert(dir) {
-    certIndex += dir;
-    if (certIndex < 0) certIndex = certPages.length - 1;
-    if (certIndex >= certPages.length) certIndex = 0;
-    certTrack.style.transform = `translateX(-${certIndex * 100}%)`;
+  function scrollCert(direction) {
+    const itemWidth = certSlider.querySelector('.cert-item').offsetWidth + 16; // ширина + gap
+    certSlider.scrollBy({
+      left: direction * itemWidth,
+      behavior: 'smooth'
+    });
   }
 
 const previews = document.querySelectorAll(".preview");
 const overlay = document.getElementById("overlay");
 const overlayImg = document.getElementById("overlay-img");
 
-    // Навешиваем обработчик на все миниатюры
 previews.forEach(img => {
       img.addEventListener("click", () => {
         overlayImg.src = img.src;
@@ -30,7 +28,6 @@ previews.forEach(img => {
       });
 });
 
-    // Закрытие по клику на фон
 overlay.addEventListener("click", () => {
       overlay.style.display = "none";
 });

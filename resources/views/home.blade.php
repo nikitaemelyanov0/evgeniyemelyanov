@@ -52,42 +52,33 @@
         <div class="overlay" id="overlay">
             <img id="overlay-img" src="" alt="Большое изображение">
         </div>
-        <div class="cert-slider">
-            <div class="cert-track" id="certTrack">
-                <div class="cert-page">
-                    <div class="cert-item"><img src="{{asset('assets/images/cert1.png')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert18.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert3.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert4.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert5.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert6.jpg')}}" alt="" class="preview"></div>
-                </div>
-                <div class="cert-page">
-                    <div class="cert-item"><img src="{{asset('assets/images/cert7.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert8.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert9.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert10.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert11.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert12.jpg')}}" alt="" class="preview"></div>
-                </div>
-                <div class="cert-page">
-                    <div class="cert-item"><img src="{{asset('assets/images/cert13.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert14.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert15.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert16.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert17.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert2.jpg')}}" alt="" class="preview"></div>
-                </div>
-                <div class="cert-page">
-                    <div class="cert-item"><img src="{{asset('assets/images/cert19.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert20.jpg')}}" alt="" class="preview"></div>
-                    <div class="cert-item"><img src="{{asset('assets/images/cert21.jpg')}}" alt="" class="preview"></div>
-                </div>
-
+        <div class="cert-slider-wrapper">
+            <button class="cert-nav cert-prev" onclick="scrollCert(-1)">‹</button>
+            <div class="cert-slider" id="certSlider">
+                <div class="cert-item"><img src="{{asset('assets/images/cert1.png')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert18.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert3.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert4.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert5.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert6.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert7.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert8.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert9.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert10.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert11.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert12.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert13.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert14.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert15.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert16.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert17.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert2.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert19.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert20.jpg')}}" alt="" class="preview"></div>
+                <div class="cert-item"><img src="{{asset('assets/images/cert21.jpg')}}" alt="" class="preview"></div>
             </div>
 
-            <button class="cert-nav cert-prev" onclick="moveCert(-1)">‹</button>
-            <button class="cert-nav cert-next" onclick="moveCert(1)">›</button>
+            <button class="cert-nav cert-next" onclick="scrollCert(1)">›</button>
         </div>
     </div>
     <div class="articles wrapper">
@@ -160,7 +151,7 @@
                     <div class="circle-logo">
                         <img src="{{asset('assets/images/phone.png')}}" alt="">
                     </div>
-                    <a class="a-contacts white-19px" style="padding-left: 111px">+7 (951) 477-62-98</a>
+                    <a class="a-contacts white-19px pd-l">+7 (951) 477-62-98</a>
                 </div>
             </div>
         </div>
