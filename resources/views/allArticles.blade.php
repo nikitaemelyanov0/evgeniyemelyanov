@@ -7,54 +7,12 @@
         <div class="allarticles-inner wrapper">
             <h2 class="black-22px">Все статьи</h2>
             <div class="allarticles-cards">
-                <div class="allarticles-card">
-                    <img src="{{asset('assets/images/article1.png')}}" alt="">
-                    <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-                </div>
-                <div class="allarticles-card">
-                    <img src="{{asset('assets/images/article1.png')}}" alt="">
-                    <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-                </div>
-                <div class="allarticles-card">
-                    <img src="{{asset('assets/images/article1.png')}}" alt="">
-                    <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-                </div>
-                <div class="allarticles-card">
-                    <img src="{{asset('assets/images/article1.png')}}" alt="">
-                    <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-                </div>
-                <div class="allarticles-card">
-                    <img src="{{asset('assets/images/article1.png')}}" alt="">
-                    <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-                </div>
-                <div class="allarticles-card">
-                    <img src="{{asset('assets/images/article1.png')}}" alt="">
-                    <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-                </div>
-                <div class="allarticles-card">
-                    <img src="{{asset('assets/images/article1.png')}}" alt="">
-                    <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-                </div>
-                <div class="allarticles-card">
-                    <img src="{{asset('assets/images/article1.png')}}" alt="">
-                    <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-                </div>
-                <div class="allarticles-card">
-                    <img src="{{asset('assets/images/article1.png')}}" alt="">
-                    <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-                </div>
-                <div class="allarticles-card">
-                    <img src="{{asset('assets/images/article1.png')}}" alt="">
-                    <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-                </div>
-                <div class="allarticles-card">
-                    <img src="{{asset('assets/images/article1.png')}}" alt="">
-                    <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-                </div>
-                <div class="allarticles-card">
-                    <img src="{{asset('assets/images/article1.png')}}" alt="">
-                    <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-                </div>
+                @foreach ($articles as $article)
+                    <a href="{{'article/'.$article->id}}"><div class="allarticles-card">
+                        <img src="{{$article->image}}" alt="">
+                        <p class="black-16px">{{$article->name}}</p>
+                    </div></a>  
+                @endforeach
             </div>
         </div>
     </div>

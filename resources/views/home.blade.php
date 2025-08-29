@@ -40,7 +40,7 @@
         </div>
     </div>
     <div class="about-me wrapper" id="about-me">
-        <h3 class="black-22px">Обо мне</h3>
+        <h3 class="black-22px">Обо мне</h3> 
         <p class="black-18px-lh155 text-about">Меня зовут Евгений Олегович Емельянов <br><br>
  
             Я – психолог, клинический психолог, магистр по направлению «организационная психология» в работе использую методы КПТ.  В своей работе опираюсь на научно-обоснованные методы. Основное направление в котором я работаю – это когнитивно-поведенческая терапия (КПТ) . Когнитивно-поведенческая терапия, в отличии от многих других видов психотерапии -подтвердила высокую эффективность в клинических исследованиях. На данный момент –  это наиболее распространенный и популярный подход в мире, рекомендованный ведущими медицинскими организациями для значительного числа расстройств и проблем. <br><br>
@@ -87,22 +87,12 @@
             <a href="{{route('articles.index')}}" class="black-19px-light">Все статьи</a>
         </div>
         <div class="articles-cards">
-            <div class="articles-card">
-                <img src="{{asset('assets/images/article1.png')}}" alt="">
-                <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-            </div>
-            <div class="articles-card">
-                <img src="{{asset('assets/images/article1.png')}}" alt="">
-                <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-            </div>
-            <div class="articles-card">
-                <img src="{{asset('assets/images/article1.png')}}" alt="">
-                <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-            </div>
-            <div class="articles-card">
-                <img src="{{asset('assets/images/article1.png')}}" alt="">
-                <p class="black-16px">Социофобия или социльное тревожное расстройство</p>
-            </div>
+            @foreach ($articles as $article)
+                <a href="{{'article/'.$article->id}}"><div class="allarticles-card">
+                    <img src="{{$article->image}}" alt="">
+                    <p class="black-16px">{{$article->name}}</p>
+                </div></a>  
+            @endforeach
         </div>
     </div>
     <div class="videos wrapper">

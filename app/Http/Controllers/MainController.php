@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
+use App\Models\Article;
 
 class MainController extends Controller
 {
     public function mainIndex() {
-        return view('home');
+        $articles = Article::All()->take(4);
+        return view('home', compact('articles'));
     }
 
 }

@@ -21,6 +21,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
+    color: #000000;
 }
 
 .black-18px-lh155{
@@ -75,11 +76,12 @@
     font-family: "Literata", serif;
     font-size: 28px;
     font-weight: 400;
+    color: #000000;
 }
 
 .white-33px{
     font-family: "Inter", sans-serif;
-    font-size: 33px;
+    font-size: 33px; 
     font-weight: 500;
     color: white;
     line-height: 150%;
@@ -297,6 +299,7 @@ header{
 .articles-card>img{
     width: 260px;
     height: 175px;
+    object-fit: cover;
 }
 
 .video-cards{
@@ -308,6 +311,7 @@ header{
 .video-card>img{
     width: 355px;
     height: 200px;
+    object-fit: cover;
 }
 
 .videos{
@@ -453,6 +457,7 @@ footer{
 .allarticles-card>img{
     width: 250px;
     height: 168px;
+    object-fit: cover;
 }
 
 .allarticles-card>p{
@@ -472,6 +477,17 @@ footer{
 
 .articles-inner>p{
     margin-top: 40px;
+}
+
+.articleName{
+    max-width: 1080px;
+    min-width: 1080px;
+    height: 200px;
+}
+.articleText{
+    max-width: 1080px;
+    min-width: 1080px;
+    height: 400px;
 }
 
 @media (max-width: 1125px){
@@ -680,5 +696,38 @@ footer{
     .allarticles-card>img{
         width: 77vw;
         height: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .white-33px {
+        font-size: 26px;
+    }
+    .white-20px{
+        font-size: 18px;
+    }
+    .black-20px{
+        font-size: 17px;
+    }
+    .black-22px{
+        font-size: 19px;
+    }
+    .black-19px{
+        font-size: 16px;
+    }
+    .black-18px-lh155{
+        font-size: 16px;
+    }
+    .black-18px{
+        font-size: 16px;
+    }
+    .blue-18px{
+        font-size: 16px;
+    }
+    .black-19px-light{
+        font-size: 17px;
+    }
+    .black-28px{
+        font-size: 21px;
     }
 }

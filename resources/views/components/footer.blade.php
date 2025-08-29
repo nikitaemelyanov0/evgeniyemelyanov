@@ -1,7 +1,7 @@
 <footer>
     <div class="wrapper">
         <div class="footer-container">
-            <h1 class="logo-font">Евгений Емельянов</h1>
+            <h1><a href="{{route('main.index')}}" class="logo-font">Евгений Емельянов</a></h1>
             <ul>
                 <li><a href="{{route('main.index')}}" class="black-18px">Главная</a></li>
                 <li class="hide-about"><a href="{{route('main.index')}}#about-me" class="black-18px read-more">Обо мне</a></li>
