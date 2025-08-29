@@ -11,5 +11,6 @@ Route::get('/article/{id}', [ArticleController::class, 'articleIndex'])->name('a
 Route::get('/createarticle', [ArticleController::class, 'articleCreateIndex'])->name('articleCreate.index');
 Route::post('/createarticle', [ArticleController::class, 'articleCreatePost'])->name('articleCreate.post');
 Route::get('/admin', [AdminController::class, 'adminIndex'])->name('admin.index');
+Route::post('/admin', [AdminController::class, 'adminPost'])->name('admin.post');
 
 

@@ -10,5 +10,8 @@
                 <li><a href="{{route('main.index')}}#contacts" class="black-18px">Контакты</a></li>
             </ul>
         </div>
+        @auth
+            <h1>dsdsds</h1>
+        @endauth
     </div>
 </header>

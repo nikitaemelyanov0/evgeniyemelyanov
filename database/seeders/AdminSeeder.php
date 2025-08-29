@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
@@ -11,7 +13,7 @@ class AdminSeeder extends Seeder
         User::updateOrCreate(
             [
                 'email' => 'админ',
-                'password' => 'почта'
+                'password' => Hash::make('почта')
             ]
         );
     }
