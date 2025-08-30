@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/app.css')}}">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css"/>
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
     

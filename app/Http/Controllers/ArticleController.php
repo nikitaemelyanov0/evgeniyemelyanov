@@ -27,10 +27,41 @@ class ArticleController extends Controller
             'name' => 'required',
             'text' => 'required',
             'image' => 'required'
+        ], [
+            'image.required' => 'Выберите картинку',
         ]);
         $path = 'storage/'.$request->file('image')->store('images', 'public');
         $data['image'] = $path;
         $article = Article::create($data);
         return redirect('article/'.$article->id);
+    }
+
+    public function articleCreateEdit($id) {
+        $article = Article::findOrFail($id);
+        return view('createArticle', compact('article'));
+    }
+    
+    public function articleCreateUpdate(Request $request, $id) {
+        $article = Article::findOrFail($id);
+
+        $data =  $request->validate([
+            'name' => 'required',
+            'text' => 'required',
+            'image' => 'required'
+        ], [
+            'image.required' => 'Выберите картинку',
+        ]);
+        
+        $path = 'storage/'.$request->file('image')->store('images', 'public');
+        $data['image'] = $path;
+        $article->update($data);
+        return redirect('article/'.$article->id);
+    }
+
+    public function articleCreateDestroy($id)
+    {
+        $article = Article::findOrFail($id);
+        $article->delete();
+        return redirect('/articles');
     }
 }

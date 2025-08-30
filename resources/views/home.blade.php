@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Главная')
+@section('title', 'Клинический психолог Евгений Олегович Емельянов')
 
 @section('content')
     <div class="main">
@@ -98,21 +98,21 @@
     <div class="videos wrapper">
         <div class="video-top"> 
             <h3 class="black-22px">Видео</h3>
-            <h2 class="black-19px-light">Все видео</h2>
+            <h2 class="black-19px-light open-modal">Все видео</h2>
         </div>
         <div class="video-cards">
-            <div class="video-card">
+            <a href="https://vkvideo.ru/video372065359_456239316" target="_blank"><div class="video-card">
                 <img src="{{asset('assets/images/video1.png')}}" alt="">
                 <p class="black-18px">Навязчивые мысли. Сошли ли Вы с ума?</p>
-            </div>
-            <div class="video-card">
-                <img src="{{asset('assets/images/video1.png')}}" alt="">
-                <p class="black-18px">Навязчивые мысли. Сошли ли Вы с ума?</p>
-            </div>
-            <div class="video-card">
-                <img src="{{asset('assets/images/video1.png')}}" alt="">
-                <p class="black-18px">Навязчивые мысли. Сошли ли Вы с ума?</p>
-            </div>
+            </div></a>
+            <a href="https://vkvideo.ru/video372065359_456239314" target="_blank"><div class="video-card">
+                <img src="{{asset('assets/images/video2.png')}}" alt="">
+                <p class="black-18px">Что вы не знали про эмоции</p>
+            </div></a>
+            <a href="https://vkvideo.ru/video372065359_456239299" target="_blank"><div class="video-card">
+                <img src="{{asset('assets/images/video3.png')}}" alt="">
+                <p class="black-18px">Что не нужно делать при ОКР</p>
+            </div></a>
         </div>
     </div>
     <div class="contacts wrapper" id="contacts">

@@ -121,7 +121,7 @@ h1{
     gap: 30px;
 }
 
-.header-container>ul>li>a:hover, .footer-container>ul>li>a:hover{
+.header-container>ul>li>a:hover, .footer-container>ul>li>a:hover, .header-container>ul>li:hover, .footer-container>ul>li:hover{
     color: #152650;
     transition: 0.2s;
     cursor: pointer;
@@ -309,6 +309,7 @@ header{
 }
 
 .video-card>img{
+    border-radius: 12px;
     width: 355px;
     height: 200px;
     object-fit: cover;
@@ -455,6 +456,7 @@ footer{
 }
 
 .allarticles-card>img{
+    border-radius: 12px;
     width: 250px;
     height: 168px;
     object-fit: cover;
@@ -489,6 +491,77 @@ footer{
     min-width: 1080px;
     height: 400px;
 }
+
+.btn-blue{
+    padding: 10px 20px;
+    background-color: #152650;
+    color: #ffffff;
+    border-radius: 12px;
+    border: none;
+}
+
+.modal {
+      display: none; /* изначально скрыто */
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;   
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    /* Окно */
+    .modal-content {
+      background-image: url('/assets/images/main-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 320px; 
+      text-align: center;
+      position: relative;
+    }
+
+    /* Кнопка закрытия */
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+      color: white;
+      font-size: 28px;
+    }
+
+    .modal a:hover {
+      text-decoration: underline;
+    }
+
+    .video-contacts{
+        background-color: transparent;
+        border: 3px solid white;
+        border-radius: 52.5px;
+        height: 70px;
+        width: auto;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+.btn-delete{
+    padding: 10px 20px;
+    background-color: #c71919;
+    color: #ffffff;
+    border-radius: 12px;
+    border: none;
+}
+
 
 @media (max-width: 1125px){
     .video-card>img {
@@ -654,6 +727,9 @@ footer{
 @media (max-width: 535px) {
     .main-container{
         padding-top: 30px;
+    }
+    .modal-content{
+        width: 96vw;
     }
 }
 

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Все статьи')
+@section('title', 'Все статьи | Клинический психолог Евгений Олегович Емельянов')
 
 @section('content')
     <div class="allarcticles">
