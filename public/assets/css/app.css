@@ -562,6 +562,15 @@ footer{
     border: none;
 }
 
+.institute{
+    display: none;
+    width: 83%;
+    border-radius: 12px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
 
 @media (max-width: 1125px){
     .video-card>img {
@@ -650,6 +659,9 @@ footer{
     }
     .help-card>img{
         width: 44vw;
+    }
+    .institute{
+        width: 100%;
     }
 }
 
